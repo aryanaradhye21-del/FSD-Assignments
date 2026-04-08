@@ -1,0 +1,24 @@
+# HTML Text Formatting Tags Table
+
+## Project Description
+
+This project is a simple static web page created using basic HTML. It demonstrates various HTML text formatting tags displayed in a table.
+
+## List of Tags Included
+
+* `<b>` – Bold text
+* `<strong>` – Important text
+* `<i>` – Italic text
+* `<em>` – Emphasized text
+* `<u>` – Underlined text
+* `<mark>` – Highlighted text
+* `<small>` – Smaller text
+* `<del>` – Deleted text
+* `<ins>` – Inserted text
+* `<sub>` – Subscript text
+* `<sup>` – Superscript text
+
+## How to Run
+
+1. Save the HTML file with a `.html` extension (for example, `index.html`).
+2. Open the file in any web browser.
