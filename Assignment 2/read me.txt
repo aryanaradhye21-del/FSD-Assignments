@@ -1,0 +1,9 @@
+﻿Personal Portfolio
+A simple personal portfolio website built using HTML and CSS to showcase my profile, education, skills, and contact details.
+Tech Stack
+* HTML
+* CSS
+How to Use
+Open Assignment2.html in your browser.
+Contact
+aryan.aradhye21@pccoepune.org
