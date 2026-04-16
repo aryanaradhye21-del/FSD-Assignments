@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODA | Curated Atelier</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#shop">Shop</a>
+            <a href="#">Collections</a>
+        </div>
+        <div class="logo">MODA</div>
+        <div class="nav-icons">
+            <button class="icon-btn" onclick="toggleCart()">
+                BAG (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="subtitle">Spring / Summer 2026</span>
+            <h1>NOIR COLLECTION</h1>
+            <a href="#shop" class="shop-now">Explore Now</a>
+        </div>
+    </header>
+
+    <section class="container" id="shop">
+        <div class="filter-bar">
+            <h2>The Essentials</h2>
+            <div class="filters">
+                <select id="categoryFilter" onchange="filterProducts()">
+                    <option value="all">View All</option>
+                    <option value="outerwear">Outerwear</option>
+                    <option value="tops">Tops</option>
+                    <option value="bottoms">Bottoms</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="product-grid" class="product-grid">
+            </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join the Atelier</h2>
+            <p>Early access to drops and exclusive editorial content.</p>
+            <form class="subscribe-form" id="newsletterForm">
+                <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">MODA</div>
+                <p>High-quality minimalism designed for the modern silhouette.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Size Guide</a>
+            </div>
+            <div class="footer-links">
+                <h4>Social</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MODA ATELIER. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button onclick="toggleCart()" class="close-cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total</span>
+                <span>$<span id="total-price">0.00</span></span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
